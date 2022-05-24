@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            .form-style-5{
+                max-width: 500px;
+                padding: 10px 20px;
+                background: #f4f7f8;
+                margin: auto;   /* This will centers the entire div */
+                padding: 20px;
+                border-radius: 100%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                
+            }
+
+            .form-style-5 fieldset{
+                border: none;
+            }
+
+            .form-style-5 legend{
+                font-size: 1.5em;
+
+            }
+
+            .form-style-5 label{
+                margin-bottom: 800px;
+            }
+
+            .form-style-5 input[type="text"],
+            .form-style-5 input[type="date"],
+            .form-style-5 input[type="datetime"],
+            .form-style-5 input[type="email"],
+            .form-style-5 input[type="number"],
+            .form-style-5 input[type="url"],
+            .form-style-5 input[type="time"],
+            .form-style-5 input[type="search"],
+            .form-style-5 textarea,
+            .form-style-5 select{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background: rgba(255, 255, 255, alpha);
+                border: none;
+                border-radius: 4px;
+                margin: 0px;
+                width: 100%;
+                outline: 0;
+                padding: 10px;
+                margin-bottom: 20px;
+                background-color: #e8eeef;
+                color: #8a97a0;
+                box-shadow: 5px 5px 20px #888888;
+            }
+
+            /* pseudoclasses */
+            .form-style-5 input[type="text"]:focus,
+            .form-style-5 input[type="date"]:focus,
+            .form-style-5 input[type="datetime"]:focus,
+            .form-style-5 input[type="email"]:focus,
+            .form-style-5 input[type="number"]:focus,
+            .form-style-5 input[type="search"]:focus,
+            .form-style-5 input[type="time"]:focus,
+            .form-style-5 input[type="url"]:focus,
+            .form-style-5 textarea:focus,
+            .form-style-5 select:focus{
+                background: #d2d9dd;
+            }
+
+            .form-style-5 select{
+                height: 35px;
+            }
+
+            .number{
+                background: #1abc9c;
+                color: #fff;
+                height: 30px;
+                width: 30px;
+                font-size: 0.8em;
+                margin-right: 4px;
+                line-height: 30px;
+                text-align: center;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+                border-radius: 15px 15px 15px 0px;
+
+            }
+
+            .form-style-5 input[type="submit"],
+            .form-style-5 input[type="button"]{
+                padding: 19px 39px 18px 39px;
+                columns: #fff;
+                background: #1abc9c;
+                font-size: 20px;
+                text-align: center;
+                font-style: normal;
+                width: 100%;
+                border: 1px solid #16a085;
+                border-width: 1px 1px 3px;
+                cursor: pointer;
+
+                
+            }
+
+            .form-style-5 input[type="button"]:hover,
+            .form-style-5 input[type="submit"]:hover{
+                background-color: #16a085;
+            }
+
+
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="form-style-5">
+            <form action="#">
+                <fieldset>
+
+                    <legend><span class="number">1 </span>Candidate Info</legend>
+
+                    <input type="text" placeholder="Your Name *">
+
+                    <input type="email" placeholder="Your Email *">
+
+                    <textarea style="height: 200px;" placeholder="About Yourself"></textarea>
+                    
+                    <label for="job">Interests:</label>
+                    <select id="job">
+                        <optgroup label="Indoors">
+
+                            <option value="fishkeeping">Fishkeeping</option>
+                            <option value="reading">Reading</option>
+                            <option value="boxing">Boxing</option>
+                            <option value="debate">Debate</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="snooker">Snooker</option>
+                            <option value="other_indoor">Other</option>
+
+
+                        </optgroup>
+                        <optgroup label="Outdoors: ">
+
+                            <option value="football">Football</option>
+                            <option value="swimming">Swimming</option>
+                            <option value="fishing">Fishing</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="other_outdoor">Other</option>
+
+
+                        </optgroup>
+                    </select>
+                
+                </fieldset>
+
+
+                <fieldset>
+                    <legend><span class="number">2 </span>Additional Info</legend>
+                    <textarea placeholder="About Your School"></textarea>
+        
+                </fieldset>
+
+                <input type="submit">
+
+            </form>
+        </div>
+    </body>
+</html>

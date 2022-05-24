@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .bg-image{
+                background: url('gym-bg.jpg'); 
+                height: 100vh;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .nav-flex-container{
+                /* border: 3px solid red; */
+                display: flex;
+                height: 80px;
+            }
+
+            .flexItems{
+                display: flex;
+                align-items: center;
+                
+            }
+
+            .items{
+                margin-left: 40px;
+                font-weight: bold;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 18px;
+                color: whitesmoke;
+                
+                
+            }
+
+
+            a{
+                text-decoration: none;
+                color: whitesmoke;
+            }
+
+            a:hover, cursor{
+                cursor: pointer;
+                text-decoration: underline;
+                text-decoration-color: orangered;
+                text-decoration-thickness: 4px;
+            }
+
+            .left-flex{
+                /* border: 2px solid green; */
+                justify-content: center;
+                flex-grow: 1;
+            }
+
+            .mid-flex{
+                /* border: 2px solid green; */
+                flex-grow: 1;
+                justify-content: center;
+            }
+
+            .right-flex{
+                /* border: 2px solid green; */
+                justify-content: center;
+                flex-grow: 1;
+            }
+
+
+            .logo{
+                height: 120px;
+                width: 120px;
+            }
+
+            /****************************** MAIN BODY */
+
+            .main-body{
+                color: white;
+                padding-left: 80px;
+                margin-left: 5%;
+                margin-right: 40%;
+                margin-top: 40px;
+                border-radius: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            input{
+                width: 50%;
+                margin-bottom: 10px;
+                margin-top: 5px;
+                border-radius: 20px;
+                padding: 10px;
+                border: none;
+                font-weight: bold;
+            }
+
+            input[type="submit"]:hover, cursor{
+                background: black;
+                color: white;
+                cursor: pointer;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="bg-image">
+    
+
+            <!-- navigation bar -->
+            <div class="nav-flex-container">
+
+                <!-- left logo -->
+                <div class="left-flex flexItems">
+
+                    <img class="logo" src="gym-logo.png" alt="logo">
+
+                </div>
+    
+                <!-- mid menu -->
+                <div class="mid-flex flexItems">
+                    <div class="mid-flex-item-1 items"><a href="#">HOME</a></div>
+                    <div class="mid-flex-item-2 items"><a href="#">ABOUT US</a></div>
+                    <div class="mid-flex-item-3 items"><a href="#">FITNESS CALCULATOR</a></div>
+                    <div class="mid-flex-item-4 items"><a href="#">CONTACT US</a></div>
+                    
+                </div>
+    
+                <!-- right menu -->
+                <div class="right-flex flexItems">
+                    <div class="right-flex-item-1 items"><a href="">CALL US</a></div>
+                    <div class="right-flex-item-2 items"><a href="">MAIL US</a></div>
+                </div>
+
+            </div>
+
+            <div class="main-body" style="border: 2px solid white;">
+                <h1>JOIN BEST GYM OF BAGALORE..</h1>
+                <h3>ENROLL NOW AND GET FLAT 30% OFF</h3>
+
+                <form action="#">
+
+                    <div class="form-group">
+                        <label for="fname">First Name: </label>
+                        <br>
+                        <input type="text" id="fname" placeholder="Enter Your First Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name: </label>
+                        <br>
+                        <input type="text" id="lname" placeholder="Enter Your Last Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mail">Email: </label>
+                        <br>
+                        <input type="email" id="mail" placeholder="Enter Your Mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwd">Password: </label>
+                        <br>
+                        <input type="password" id="passwd" placeholder="Enter Your Password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Mobile Number: </label>
+                        <br>
+                        <input type="number" id="number" placeholder="Enter Your Mobile Number" required>
+                    </div>
+                    <br>
+
+                    <input type="submit" name="submit">
+
+                </form>
+
+            </div>
+
+
+        </div>
+        
+
+        
+        
+        
+    </body>
+</html>
